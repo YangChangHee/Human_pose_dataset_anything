@@ -4,9 +4,12 @@
 We have created this repository to share code using SAM (Segmentation Anything) for generating pseudo ground truth (GT) for individuals using human pose datasets.
 
 ## Tasks to be done
-* Make CrowdPose & Human36M pseudo GT 
+* Make CrowdPose & Human36M & 3DOH50K pseudo GT 
 * Make Visualization Code
 * Upload Pseudo GT annotation json file
+
+## Other dataset
+If you need pseudo GT annotations for other datasets, please mention it in the issue.
 
 ## Contribution
 
@@ -37,6 +40,47 @@ OCHuman, and MSCOCO datasets were obtained from their respective official websit
 LSP dataset was obtained from BEV, and the link for downloading the dataset is as follows.
 
 [BEV-ROMP github](https://github.com/YangChangHee/ROMP)
+
+## Download pseudo GT
+LSP, MPII, HR-LSPET, MSCOCO, OCHuman
+
+[google-drive](https://drive.google.com/drive/folders/1z-rHkgSEGFVD3QysYzX2ytrCH5E2gnku?usp=sharing)
+
+## Getting started
+The directory structure of our data is as follows:
+```
+| data
+| - Human36M
+| - - images
+| - - annotations
+| - MuCo
+| - - data
+| - - - augmented_set
+| - - - unaugmented_set
+| - - MuCo-3DHP.json
+| - OCHuman
+| - - images
+| - - ochuman.json
+| - 3dpw
+| - - data
+| - - - 3DPW_latest_train.josn
+| - - imageFiles
+| - HR-LSPET
+| - - hr-lsped
+| - - - joints.mat
+| - - - image.jpg...
+| - MPII
+| - - images
+| - - annotations
+| - MSCOCO
+| - - images
+| - - - train2017
+| - - annotations
+| - - - person_keypoints_train2017.json
+| - CrowdPose
+| - - images
+| - - annotations
+```
 
 # Visualization
 
