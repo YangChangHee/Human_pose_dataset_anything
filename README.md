@@ -82,6 +82,35 @@ The directory structure of our data is as follows:
 | - - annotations
 ```
 
+### Write the following code in the terminal to generate pseudo GT.
+### LSP
+```
+python segment_anything_pseudo.py --image_path {data_path}/HR-LSPET/hr-lspet --annot_path {data_path}/HR-LSPET/hr-lspet --dataset_name HR-LSP --save_name {save_name} --model_path sam_vit_h_6b8939.pth
+```
+
+### MPII
+```
+python segment_anything_pseudo.py --image_path {data_path}/MPII/images --annot_path {data_path}/MPII/annotations --dataset_name MPII --save_name {save_name} --model_path sam_vit_h_6b8939.pth
+```
+
+### MSCOCO
+```
+python segment_anything_pseudo.py --image_path {data_path}/MSCOCO/images/train2017 --annot_path {data_path}/MSCOCO/annotations --dataset_name MSCOCO --save_name {save_name} --model_path sam_vit_h_6b8939.pth
+```
+
+### OCHuman
+```
+python segment_anything_pseudo.py --image_path {data_path}/OCHuman/images/ --annot_path {data_path}/OCHuman/ --dataset_name OCHuman --save_name {save_name} --model_path sam_vit_h_6b8939.pth
+```
+
+
+### CrowdPose
+We plan to make modifications to the code in the future as it is not currently demonstrating satisfactory performance
+```
+python segment_anything_pseudo.py --image_path {data_path}/CrowdPose/images/ --annot_path {data_path}/CrowdPose/annotations --dataset_name OCHuman --save_name {save_name} --model_path sam_vit_h_6b8939.pth
+```
+
+
 # Visualization
 
 ## MPII
